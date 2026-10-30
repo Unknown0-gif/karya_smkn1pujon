@@ -1,4 +1,4 @@
-/* Reset CSS Dasar */
+/* Reset CSS */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,10 +12,10 @@ body {
   padding-bottom: 40px;
 }
 
-/* Header dengan Background Gambar Desain Grafis */
+/* Header */
 header {
   background: linear-gradient(rgba(74, 0, 224, 0.85), rgba(142, 45, 226, 0.85)), 
-              url('https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&q=80');
+              url('https://i.pinimg.com/736x/90/18/16/9018162c6e0c312380d6dcbc2d38be62.jpg');
   background-size: cover;
   background-position: center;
   color: white;
