@@ -25,7 +25,7 @@ function openModal(title, author, desc, imgSrc) {
   document.getElementById('modalImg').src = imgSrc;
 
   // Nomor WhatsApp admin/siswa (Ganti dengan nomor yang sesuai, format: 628xxx)
-  const phoneNumber = '6281234567890';
+  const phoneNumber = '6282335815055';
   const message = encodeURIComponent(`Halo, saya tertarik untuk memesan atau bertanya terkait karya "${title}" karya ${author}.`);
   document.getElementById('waBtn').href = `https://wa.me/${phoneNumber}?text=${message}`;
 
