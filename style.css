@@ -12,32 +12,31 @@ body {
   padding-bottom: 40px;
 }
 
-/* Header */
+/* Header dengan Tema Biru Laut  */
 header {
-  background: linear-gradient(rgba(74, 0, 224, 0.85), rgba(142, 45, 226, 0.85)), 
-              url('https://i.pinimg.com/736x/90/18/16/9018162c6e0c312380d6dcbc2d38be62.jpg');
+  background: linear-gradient(rgba(14, 116, 144, 0.55), rgba(3, 105, 161, 0.55)), 
+              url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1600&q=90');
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
-  padding: 50px 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 80px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 header .logo h2 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 
 header .logo span {
-  color: #FFD700;
+  color: #38bdf8; 
 }
 
 header .tagline {
-  font-size: 1rem;
+  font-size: 1.1rem;
   opacity: 0.95;
-  margin-top: 8px;
+  margin-top: 10px;
   font-weight: 300;
 }
 /* Filter Buttons */
