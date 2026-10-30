@@ -12,26 +12,34 @@ body {
   padding-bottom: 40px;
 }
 
-/* Header */
+/* Header dengan Background Gambar Desain Grafis */
 header {
-  background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+  /* Menggunakan gambar latar belakang unsplash bertema desain/kreatif */
+  background: linear-gradient(rgba(74, 0, 224, 0.85), rgba(142, 45, 226, 0.85)), 
+              url('https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&q=80');
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 30px 15px;
+  padding: 50px 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 header .logo h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 header .logo span {
-  color: #FFD700;
+  color:#FFD700;
 }
 
 header .tagline {
-  font-size: 0.95rem;
-  opacity: 0.9;
-  margin-top: 5px;
+  font-size: 1rem;
+  opacity: 0.95;
+  margin-top: 8px;
+  font-weight: 300;
 }
 
 /* Filter Buttons */
