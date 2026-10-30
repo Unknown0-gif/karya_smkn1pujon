@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desain Kreatif - Portfolio dan Market Galeri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header>
+    <div class="logo">
+      <h2>Kreatif<span>Design</span></h2>
+    </div>
+    <p class="tagline">Showcase Karya Desain Grafis Talenta Muda </p>
+  </header>
+
+  <!-- Filter Kategori -->
+  <section class="filter-container">
+    <button class="filter-btn active" onclick="filterGallery('all')">Semua</button>
+    <button class="filter-btn" onclick="filterGallery('poster')">Poster</button>
+    <button class="filter-btn" onclick="filterGallery('logo')">Logo</button>
+    <button class="filter-btn" onclick="filterGallery('feed')">Feed Sosmed</button>
+  </section>
+
+  <!-- Galeri Karya (Grid Layout) -->
+  <main class="gallery-grid" id="gallery">
+
+    <!-- Card 1 -->
+    <div class="card poster">
+      <img src="https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?w=500&q=80" alt="Poster Event Sekolah">
+      <div class="card-info">
+        <span class="badge">Poster</span>
+        <h3>Poster Music Fest 2026</h3>
+        <p class="author">Oleh: Yuwanda (SMKN 1 Pujon)</p>
+        <button class="btn-primary" onclick="openModal('Poster Music Fest 2026', 'Yuwanda', 'Poster modern gaya cyberpunk untuk pensi sekolah.', 'https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?w=500&q=80')">Lihat Detail</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card logo">
+      <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&q=80" alt="Desain Logo Minimalis">
+      <div class="card-info">
+        <span class="badge">Logo</span>
+        <h3>Branding CoffeShop</h3>
+        <p class="author">Oleh: Muhammad Abdi Farel (SMKN 1 Pujon)</p>
+        <button class="btn-primary" onclick="openModal('Branding CoffeShop', 'Muhammad Abdi Farel', 'Desain logo bertema minimalis hangat untuk kedai kopi lokal.', 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500&q=80')">Lihat Detail</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card feed">
+      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&q=80" alt="Feed Instagram Kontemporer">
+      <div class="card-info">
+        <span class="badge">Feed Sosmed</span>
+        <h3>Instagram Aesthetic Template</h3>
+        <p class="author">Oleh: Keysia & Maharani (SMKN 1 PUJON)</p>
+        <button class="btn-primary" onclick="openModal('Instagram Aesthetic Template', 'Keysia & Maharani', 'Set templat feed Instagram untuk produk fashion anak muda.', 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&q=80')">Lihat Detail</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pop-up Detail Modal -->
+  <div id="detailModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modalImg" src="" alt="Detail Gambar">
+      <h2 id="modalTitle">Judul Karya</h2>
+      <p id="modalAuthor" class="author-modal">Nama Siswa</p>
+      <p id="modalDesc">Deskripsi ringkas karya desain grafis.</p>
+      <a id="waBtn" href="#" target="_blank" class="btn-whatsapp">Pesan / Rekrut Desainer Ini via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Karya Kreatif. Dipublikasikan secara gratis via GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
